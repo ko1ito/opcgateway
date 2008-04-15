@@ -18,11 +18,13 @@ int main(array<System::String ^> ^args)
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false); 
 
+	WTclientCoInit();
+
 	// Create the main window and run it
 	Application::Run(gcnew Form1());
 
-	WTclientCoInit();
-	WTclientCoUninit();
+	
+	
 
 	return 0;
 }
